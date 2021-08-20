@@ -1,0 +1,10 @@
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+
+.card {
+  text-align: center;
+  padding: 3rem 2rem;
+  p {
+    padding: 1.5rem 0;
+    color: $Very-dark-grayish-blue;
+  }
+}

@@ -1,0 +1,28 @@
+$Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+
+footer {
+  background-color: hsl(168, 34%, 71%);
+  color: #2c7566;
+  padding: 3rem 2rem;
+  ul {
+    padding-top: 2rem;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+  }
+  .ini {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .sccials {
+    padding: 2rem 0;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

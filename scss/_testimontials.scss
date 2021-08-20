@@ -1,0 +1,33 @@
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Dark-grayish-blue: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+
+.testimontials {
+  padding: 3rem 2rem;
+  text-align: center;
+  h4 {
+    font-size: 1.25rem;
+    color: $Grayish-blue;
+    text-transform: uppercase;
+  }
+  img {
+    border-radius: 50%;
+    width: 100px;
+    padding: 2rem 0;
+  }
+}
+.testimontial {
+  padding: 2rem 0;
+  h4 {
+    padding-top: 2rem;
+    text-transform: initial;
+    color: $Very-dark-desaturated-blue;
+
+    span {
+      color: $Grayish-blue;
+      font-family: "Barlow", sans-serif;
+      line-height: 3rem;
+    }
+  }
+}

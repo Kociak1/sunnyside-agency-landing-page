@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,wght@0,700;1,900&display=swap");
+@import "./header";
+@import "./card";
+@import "./photo";
+@import "./testimontials";
+@import "./galery";
+@import "./footer";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+$Soft-red: hsl(7, 99%, 70%);
+$Yellow: hsl(51, 100%, 49%);
+$Dark-desaturated-cyan-graphic-design-text: hsl(167, 40%, 24%);
+$Dark-blue-photography-text: hsl(198, 62%, 26%);
+$Dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+
+$Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+$Very-dark-grayish-blue: hsl(213, 9%, 39%);
+$Dark-grayish-blue: hsl(232, 10%, 55%);
+$Grayish-blue: hsl(210, 4%, 67%);
+$White: hsl(0, 0%, 100%);
+
+body {
+  font-family: "Barlow", sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+h3,
+h4 {
+  font-family: "Fraunces", serif;
+  font-size: 1.953rem;
+}
+
+.img {
+  width: 100vw;
+}
+
+a {
+  color: black;
+  font-family: "Fraunces", serif;
+  text-decoration: none;
+  position: relative;
+  font-size: 1.25rem;
+}
+
+a::after {
+  content: "";
+  width: 110%;
+  height: 10px;
+  background-color: var(--color);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  z-index: -1;
+  border-radius: 1rem;
+}
+img.desktop {
+  width: 100%;
+}
+.desktop {
+  display: none;
+}
+.center {
+  max-width: 600px;
+}
+
+footer li:hover {
+  cursor: pointer;
+  color: white;
+}
+svg {
+  fill: #2c7566;
+}
+svg:hover {
+  cursor: pointer;
+  fill: white;
+}
+@media (min-width: 1440px) {
+  .desktop {
+    display: block;
+  }
+  header {
+    background: url("./images/desktop/image-header.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .mobile {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    list-style: none;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+    color: white;
+    input[type="button"] {
+      background: white;
+    }
+  }
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    .card {
+      text-align: left;
+      position: relative;
+
+      div {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 50ch;
+      }
+    }
+  }
+  .grid {
+    display: flex;
+    gap: 3rem;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    .center {
+      width: 600px;
+    }
+  }
+  .photo.desktop {
+    display: flex;
+  }
+  .testimontials {
+    padding: 5rem;
+  }
+}
